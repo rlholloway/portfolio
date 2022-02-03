@@ -1,0 +1,36 @@
+// GENERAL SETUP STYLES
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 125%;
+}
+
+body {
+    font-family: $title-font;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+// BASIC TEXTS
+h1 {
+    font-size: 3.2rem;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+h2,
+h4 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: $main-font;
+}

@@ -7,49 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d0f9c637ba.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <title>Rachel Holloway</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-
     <header>
-        <nav>
+        <nav class="menu wrapper">
             <ul>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a class="menuItem" href="#about">About Me</a></li>
+                <li><a class="menuItem" href="#projects">Projects</a></li>
+                <li><a class="menuItem" href="#contact">Contact</a></li>
             </ul>
+            <div>
+                <button class="hamburger">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                    <div class="line-three"></div>
+                </button>
+            </div>
         </nav>
-        <h1>— Hello, I'm Rachel!</h1>
-        <h2>A front-end web developer, dedicated to writing clean and accessible code.</h2>
+        <div class="wrapper">
+            <h1>Hello, I'm Rachel!</h1>
+            <h2>A front-end web developer, dedicated to writing clean and accessible code.</h2>
+        </div>
     </header>
     <main>
-        <section>
-            <h3>About Me</h3>
-            <p>As a recent graduate of Juno College of Technology, I feel ready (and excited) to join the tech industry where I can continue to learn and grow, alongside other talented developers. I am an expert communicator who loves creative problem solving and taking on new challenges! In my spare time, I like to garden, play ukulele, and spend time with friends.</p>
-
-            <p>Prior to coding, I worked as a teacher and a floral designer. If you would like to read more about my coding journey, feel free to check out this <a target="_blank" href="https://medium.com/@rh.rachelholloway/hacker-voice-im-in-523dafdfbcf9">blog post I wrote.</a></p>
-
-        <section>
-            <h3>Skills</h3>
-            <span class="iconify" data-icon="icomoon-free:html-five2"></span>
-            <span class="iconify" data-icon="fontisto:css3"></span>
-            <span class="iconify" data-icon="cib:sass-alt"></span>
-            <span class="iconify" data-icon="teenyicons:javascript-outline"></span>
-            <span class="iconify" data-icon="akar-icons:jquery-fill"></span>
-            <span class="iconify" data-icon="akar-icons:react-fill"></span>
-            <span class="iconify" data-icon="simple-icons:firebase"></span>
-            <span class="iconify" data-icon="akar-icons:github-fill"></span>
-            <span class="iconify" data-icon="feather:terminal"></span>
-            <span class="iconify" data-icon="fa-solid:universal-access"></span>
+        <section class="wrapper section-one">
+            <div class="image-box">
+                <img src="./assets/image01.jpg" alt="A portrait photo of Rachel">
+            </div>
+            <div>
+                <h3 id="about">About Me</h3>
+                <p>As a recent graduate of Juno College of Technology, I feel ready (and excited) to join the tech industry where I can continue to learn and grow, alongside other talented developers. I am an expert communicator who loves creative problem solving and taking on new challenges! In my spare time, I like to garden, play ukulele, and spend time with friends.</p>
+    
+                <p>Prior to coding, I worked as a teacher and a floral designer. If you would like to read more about my coding journey, feel free to check out this <a target="_blank" href="https://medium.com/@rh.rachelholloway/hacker-voice-im-in-523dafdfbcf9">blog post</a> I wrote.</p>
+            </div>
         </section>
 
-        <section>
-            <h3>Projects</h3>
+        <section class="section-two">
+            <div class="wrapper">
+                <h3>Skills</h3>
+                <div class=skill-list>
+                    <span class="iconify skill-icon" data-icon="icomoon-free:html-five2"></span>
+                    <span class="iconify skill-icon" data-icon="fontisto:css3"></span>
+                    <span class="iconify skill-icon" data-icon="cib:sass-alt"></span>
+                    <span class="iconify skill-icon" data-icon="teenyicons:javascript-outline"></span>
+                    <span class="iconify skill-icon" data-icon="akar-icons:jquery-fill"></span>
+                    <span class="iconify skill-icon" data-icon="akar-icons:react-fill"></span>
+                    <span class="iconify skill-icon" data-icon="simple-icons:firebase"></span>
+                    <span class="iconify skill-icon" data-icon="akar-icons:github-fill"></span>
+                    <span class="iconify skill-icon" data-icon="feather:terminal"></span>
+                    <span class="iconify skill-icon" data-icon="fa-solid:universal-access"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper">
+            <h3 id="projects">Projects</h3>
             <div>
                 <h4>Textilee</h4>
                 <p>This was my first project in bootcamp. A multi-page website, created from a PSD template, that is responsive across all devices.</p>
@@ -98,8 +114,8 @@
             </div>
         </section>
 
-        <section>
-            <h3>Contact</h3>
+        <section class="wrapper">
+            <h3 id="contact">Contact</h3>
             <div>
                 <form action="submit">
                     <label for="name">Name:</label>
@@ -117,8 +133,11 @@
         </section>
     </main>
     <footer>
-        <p>Developed and Designed by Rachel Holloway</p>
+        <div class="wrapper">
+            <p>Developed and Designed by Rachel Holloway</p>
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

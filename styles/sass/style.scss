@@ -1,0 +1,20 @@
+$main-font: "Poppins", sans-serif;
+$title-font: "Raleway", sans-serif;
+$white: whitesmoke;
+$purple: mediumpurple;
+$hover-color: darkslateblue;
+
+@import "normalize";
+@import "typography";
+@import "nav";
+@import "about-section";
+
+header {
+    height: 65vh;
+    background-color: $white;
+
+    h2 {
+        width: 60%;
+        font-family: $main-font;
+    }
+}

@@ -1,0 +1,52 @@
+// FIRST SECTION (ABOUT ME)
+.section-one {
+    display: flex;
+
+    a {
+        color: $purple;
+    }
+
+    a:hover {
+        color: $hover-color;
+    }
+}
+
+.image-box {
+    width: 300px;
+    margin: 5%;
+
+    img {
+        width: 300px;
+        border-radius: 50%;
+    }
+}
+
+// SECOND SECTION (SKILLS)
+.section-two {
+    background-color: $white;
+    padding-top: 3%;
+    padding-bottom: 5%;
+
+    h3 {
+        margin: 0;
+        margin-bottom: 3%;
+    }
+}
+
+.skill-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.skill-icon {
+    width: 100px;
+    height: 60px;
+
+    &:hover {
+        color: $purple;
+    }
+}
+
+
