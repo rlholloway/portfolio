@@ -374,6 +374,46 @@ nav li a:focus {
   color: mediumpurple;
 }
 
+.project01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.project-image-box {
+  width: 45%;
+  margin-right: 2%;
+  border: 2px solid yellow;
+}
+.project-image-box img {
+  width: 100%;
+}
+
+.project-text-box {
+  width: 52%;
+  border: 2px solid purple;
+}
+
+.link-box {
+  border: 2px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.link-box div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header {
   height: 65vh;
   background-color: whitesmoke;

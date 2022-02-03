@@ -1,0 +1,32 @@
+// THIRD SECTION (PROJECTS)
+.project01 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px solid red;
+}
+
+.project-image-box {
+    width: 45%;
+    margin-right: 2%;
+    border: 2px solid yellow;
+
+    img {
+        width: 100%;
+    }
+}
+
+.project-text-box {
+    width: 52%;
+    border: 2px solid purple;
+}
+
+.link-box {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        display: flex;
+    }
+}
