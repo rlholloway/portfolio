@@ -322,7 +322,9 @@ nav li a:focus {
   background-color: whitesmoke;
   margin: 1%;
 }
-.hamburger:hover {
+
+.hamburger:hover,
+.hamburger:focus {
   background-color: white;
   border: 1px solid mediumpurple;
 }
@@ -661,6 +663,11 @@ nav li a:focus {
   background-color: darkslateblue;
 }
 
+.thank-you {
+  text-align: center;
+  margin: 8% 0;
+}
+
 .box02 {
   width: 48%;
   padding: 0 0 0 3%;
@@ -700,9 +707,17 @@ nav li a:focus {
 @media (max-width: 800px) {
   .contact-container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .icon-box {
+    margin-bottom: 4%;
   }
 
   .box01 {

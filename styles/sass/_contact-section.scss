@@ -56,6 +56,11 @@
     background-color: $hover-color;
 }
 
+.thank-you {
+    text-align: center;
+    margin: 8% 0;
+}
+
 .box02 {
     width: 48%;
     padding: 0 0 0 3%;
@@ -89,7 +94,16 @@
 
 @media(max-width: 800px) {
     .contact-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+    .icon-box {
+        margin-bottom: 4%;
     }
 
     .box01 {
