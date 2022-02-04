@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- HEADER AND NAV -->
     <header>
         <nav class="menu wrapper">
             <a href="#" class="logo">Rachel</a>
@@ -32,46 +33,76 @@
             <h2>A front-end web developer, dedicated to writing clean and accessible code.</h2>
         </div>
     </header>
+    <!-- MAIN -->
     <main>
+        <!-- SECTION ONE -->
         <section class="wrapper section-one">
             <div class="image-box">
                 <img src="./assets/image01.jpg" alt="A portrait photo of Rachel">
             </div>
             <div>
                 <h3 id="about">About Me</h3>
-                <p>As a recent graduate of Juno College of Technology, I feel ready (and excited) to join the tech industry where I can continue to learn and grow, alongside other talented developers. I am an expert communicator who loves creative problem solving and taking on new challenges! In my spare time, I like to garden, play ukulele, and spend time with friends.</p>
+                <p>As a recent graduate of Juno College of Technology, I am ready (and excited) to join the tech industry where I can continue to learn and grow, alongside other talented developers. I am an expert communicator who loves creative problem solving and taking on new challenges! In my spare time, I like to garden, play ukulele, and spend time with friends.</p>
     
                 <p>Prior to coding, I worked as a teacher and a floral designer. If you would like to read more about my coding journey, feel free to check out this <a target="_blank" href="https://medium.com/@rh.rachelholloway/hacker-voice-im-in-523dafdfbcf9">blog post</a> I wrote.</p>
             </div>
         </section>
+        <!-- END OF SECTION ONE -->
 
+        <!-- SECTION TWO -->
         <section class="section-two">
             <div class="wrapper">
                 <h3>Skills</h3>
                 <div class=skill-list>
-                    <span class="iconify skill-icon" data-icon="icomoon-free:html-five2"></span>
-                    <span class="iconify skill-icon" data-icon="fontisto:css3"></span>
-                    <span class="iconify skill-icon" data-icon="cib:sass-alt"></span>
-                    <span class="iconify skill-icon" data-icon="teenyicons:javascript-outline"></span>
-                    <span class="iconify skill-icon" data-icon="akar-icons:jquery-fill"></span>
-                    <span class="iconify skill-icon" data-icon="akar-icons:react-fill"></span>
-                    <span class="iconify skill-icon" data-icon="simple-icons:firebase"></span>
-                    <span class="iconify skill-icon" data-icon="akar-icons:github-fill"></span>
-                    <span class="iconify skill-icon" data-icon="feather:terminal"></span>
-                    <span class="iconify skill-icon" data-icon="fa-solid:universal-access"></span>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="icomoon-free:html-five2"></span><p class="icon-title">HTML5</p>
+                    </div>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="fontisto:css3"></span><p class="icon-title">CSS</p>
+                    </div>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="cib:sass-alt"></span><p class="icon-title">SASS</p>
+                    </div>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="teenyicons:javascript-outline"></span><p class="icon-title">JavaScript</p>
+                    </div>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="akar-icons:jquery-fill"></span><p class="icon-title">jQuery</p>
+                    </div>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="akar-icons:react-fill"></span><p class="icon-title">React</p>
+                    </div>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="simple-icons:firebase"></span><p class="icon-title">Firebase</p>
+                    </div>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="akar-icons:github-fill"></span><p class="icon-title">Github</p>
+                    </div>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="feather:terminal"></span><p class="icon-title">Terminal</p>
+                    </div>
+                    <div>
+                        <span class="iconify skill-icon" data-icon="fa-solid:universal-access"></span><p class="icon-title">Accessibility</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- END OF SECTION TWO -->
 
-        <section class="wrapper">
+        <!-- SECTION THREE -->
+        <section class="wrapper section-three">
             <h3 id="projects">Projects</h3>
+
+            <!-- PROJECT ONE -->
             <div class="project01">
                 <div class="project-image-box">
                     <img src="./assets/image-project01.png" alt="An image of Rachel's first project">
                 </div>
                 <div class="project-text-box">
-                    <h4>Textilee</h4>
-                    <p>This was my first project in bootcamp. A multi-page website, created from a PSD template, that is responsive across all devices.</p>
+                    <div class="description">
+                        <h4>Textilee</h4>
+                        <p>This was my first project in bootcamp. A multi-page website, created from a PSD template, that is responsive across all devices.</p>
+                    </div>
                     <div class="link-box">
                         <div>
                             <p>HTML5</p>
@@ -86,78 +117,121 @@
                 </div>
             </div>
 
-            <div>
+            <!-- PROJECT TWO -->
+            <div class="project02">
                 <div class="project-image-box">
                     <img src="./assets/image-project02.png" alt="An image of Rachel's second project">
                 </div>
-                <h4>Music Mood Generator</h4>
-                <p>A responsive website that calls the iTunes API to generate a song, based off of the user's selected mood.</p>
-                    <div>
-                        <p>HTML5</p>
-                        <p>SASS</p>
-                        <p>JavaScript</p>
+                <div class="project-text-box">
+                    <div class="description">
+                        <h4>Music Mood Generator</h4>
+                        <p>A responsive website that calls the iTunes API to generate a song, based off of the user's selected mood.</p>
                     </div>
-                <a href="https://elastic-almeida-3efeab.netlify.app/">View Live</a>
-                <a href="https://github.com/rlholloway/musicMoodGenerator">Github</a>
+                    <div class="link-box">
+                        <div>
+                            <p>HTML5</p>
+                            <p>SASS</p>
+                            <p>JavaScript</p>
+                        </div>
+                        <div>
+                            <a href="https://elastic-almeida-3efeab.netlify.app/">View Live</a>
+                            <a href="https://github.com/rlholloway/musicMoodGenerator">Github</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
+
+            <!-- PROJECT THREE -->
+            <div class="project03">
                 <div class="project-image-box">
                     <img src="./assets/image-project03.png" alt="An image of Rachel's third project">
                 </div>
-                <h4>The Inspired Mind</h4>
-                <p>My first React app! I used the Quote Garden API to allow users to search for different quotes, based on an author or topic.</p>
-                <div>
-                    <p>CSS</p>
-                    <p>React</p>
-                    <p>JavaScript</p>
+                <div class="project-text-box">
+                    <div class="description">
+                        <h4>The Inspired Mind</h4>
+                        <p>My first React app! I used the Quote Garden API to allow users to search for different quotes, based on an author or topic.</p>
+                    </div>
+                    <div class="link-box">
+                        <div>
+                            <p>CSS</p>
+                            <p>React</p>
+                            <p>JavaScript</p>
+                        </div>
+                        <div>
+                            <a href="https://quirky-goldstine-ee0f30.netlify.app/">View Live</a>
+                            <a href="https://github.com/rlholloway/project-03-inspired-mind">Github</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="https://quirky-goldstine-ee0f30.netlify.app/">View Live</a>
-                <a href="https://github.com/rlholloway/project-03-inspired-mind">Github</a>
             </div>
-            <div>
+
+            <!-- PROJECT FOUR -->
+            <div class="project04">
                 <div class="project-image-box">
                     <img src="./assets/image-project04.png" alt="An image of Rachel's fourth project">
                 </div>
-                <h4>Bite-Sized Traveling</h4>
-                <p>A responsive React app that allows users to plan out which restuarants to visit when traveling to different cities. Through the Yelp API and Firebase, users are able to add or remove restuarants from their trips, as well as add notes to specific restaurants.</p>
-                    <div>
-                        <p>CSS</p>
-                        <p>React</p>
-                        <p>JavaScript</p>
-                        <p>Firebase</p>
+                <div class="project-text-box">
+                    <div class="description">
+                        <h4>Bite-Sized Traveling</h4>
+                        <p>A responsive React app that allows users to plan out which restuarants to visit when traveling to different cities. Through the Yelp API and Firebase, users are able to add or remove restuarants from their trips, as well as add notes to specific restaurants.</p>
                     </div>
-                <a href="https://bite-sized-travel-project.netlify.app/">View Live</a>
-                <a href="https://github.com/rlholloway/Project4">Github</a>
+                    <div class="link-box">
+                        <div>
+                            <p>CSS</p>
+                            <p>React</p>
+                            <p>JavaScript</p>
+                            <p>Firebase</p>
+                        </div>
+                        <div>
+                            <a href="https://bite-sized-travel-project.netlify.app/">View Live</a>
+                            <a href="https://github.com/rlholloway/Project4">Github</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- END OF SECTION THREE -->
 
-        <section class="wrapper">
-            <h3 id="contact">Contact</h3>
-            <div>
-                <form id="contact-form" action="https://formspree.io/f/xpzbpjjr" method="POST">
-                    <label class="sr-only" for="name">Enter your name</label>
-                    <input id="name" name="name" type="text" placeholder="Name" required="">
-
-                    <label class="sr-only" for="email">Enter your email</label>
-                    <input id="email" name="email" type="text" placeholder="Email" required="">
-
-                    <label class="sr-only" for="message">Write a message</label>
-                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Message" required=""></textarea>
-                    <button type="submit" id="submit-button">Send Message</button>
-                    <p id="thank-you"></p>
-                </form>
-            </div>
-            <div>
-                <p>If you ever want to grab a coffee and have a chat, you can send me a message here! You can also connect with me through LinkedIn.</p>
-                <a target="_blank" href="https://www.linkedin.com/in/rachel-holloway-359877221/"><span class="iconify" data-icon="akar-icons:linkedin-fill"></span></a>
+        <!-- SECTION FOUR -->
+        <section class="section-four">
+            <div class="wrapper">
+                <h3 id="contact">Contact</h3>
+                <div class="contact-container">
+                    <div class="box01">
+                        <form id="contact-form" action="https://formspree.io/f/xpzbpjjr" method="POST">
+                            <label class="sr-only" for="name">Enter your name</label>
+                            <input id="name" name="name" type="text" placeholder="Name" required="">
+        
+                            <label class="sr-only" for="email">Enter your email</label>
+                            <input id="email" name="email" type="text" placeholder="Email" required="">
+        
+                            <label class="sr-only" for="message">Write a message</label>
+                            <textarea id="message" name="message" cols="52" rows="10" placeholder="Message" required=""></textarea>
+                            <button type="submit" id="submit-button">Send Message</button>
+                            <p id="thank-you"></p>
+                        </form>
+                    </div>
+                    <div class="box02">
+                        <p>If you have any questions about me or my projects, you can send me a message here! I'm always up to to grab a coffee and have a chat. You can also connect with me through social media.</p>
+                        <div class="icon-box">
+                            <a target="_blank" href="https://github.com/rlholloway"><span class="iconify contact-icon" data-icon="akar-icons:github-fill"></span></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/rachel-holloway-359877221/"><span class="iconify contact-icon" data-icon="akar-icons:linkedin-fill"></span></a>
+                            <a target="_blank" href="mailto:rh.rachelholloway@gmail.com"><span class="iconify contact-icon" data-icon="akar-icons:envelope"></span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- END OF SECTION FOUR -->
     </main>
+    <!-- END OF MAIN -->
+    <!-- FOOTER -->
     <footer>
         <div class="wrapper">
-            <p>Developed and Designed by Rachel Holloway</p>
+            <p>Designed and Developed by Rachel Holloway</p>
         </div>
     </footer>
+    <!-- END OF FOOTER -->
     <script src="script.js"></script>
 </body>
 
