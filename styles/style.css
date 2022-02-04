@@ -558,6 +558,13 @@ nav li a:focus {
 .link-box div a:focus {
   color: darkslateblue;
 }
+.link-box .pro04-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 
 @media (max-width: 1000px) {
   .project-text-box p {
