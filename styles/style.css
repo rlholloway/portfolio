@@ -395,6 +395,7 @@ nav li a:focus {
 }
 .section-one a {
   color: mediumpurple;
+  text-decoration: none;
 }
 .section-one a:hover,
 .section-one a:focus {
