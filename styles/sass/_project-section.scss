@@ -1,15 +1,24 @@
 // THIRD SECTION (PROJECTS)
-.project01 {
+.project01,
+.project02,
+.project03,
+.project04 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    border: 2px solid red;
+    margin-bottom: 2%;
+    padding: 1%;
+    border: 3px solid $purple;
+}
+
+.project02,
+.project04 {
+    flex-direction: row-reverse;
 }
 
 .project-image-box {
     width: 45%;
-    margin-right: 2%;
-    border: 2px solid yellow;
 
     img {
         width: 100%;
@@ -17,16 +26,66 @@
 }
 
 .project-text-box {
-    width: 52%;
-    border: 2px solid purple;
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h4 {
+        margin: 2%;
+    }
+
+    p {
+        margin: 3% 0 0 3%;
+    }
 }
 
 .link-box {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    border-top: 2px solid $purple;
+    
 
     div {
         display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 5%;
+
+        a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $purple;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: $hover-color;
+        }
+    }
+}
+
+// MEDIA QUERIES
+@media(max-width: 1000px) {
+    .project-text-box p {
+        font-size: 1rem;
+    }
+
+    .link-box div a {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 800px){
+    .section-three h3 {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .project-image-box,
+    .project-text-box {
+        flex-direction: column;
+        width: 100%;
     }
 }

@@ -9,7 +9,9 @@ $hover-color: darkslateblue;
 @import "nav";
 @import "about-section";
 @import "project-section";
+@import "contact-section";
 
+// HEADER AND FOOTER
 header {
     height: 65vh;
     background-color: $white;
@@ -17,5 +19,42 @@ header {
     h2 {
         width: 60%;
         font-family: $main-font;
+    }
+}
+
+footer p {
+    text-align: center;
+    margin: 2% 0;
+    font-family: $title-font;
+    font-size: 1rem;
+}
+
+@media(max-width: 1000px) {
+    header {
+        height: 50vh;
+
+        h2 {
+            width: 90%;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    header {
+        height: 40vh;
+        
+        h1 {
+            font-size: 2.8rem;
+        }
+        
+        h2 {
+            font-size: 1.1rem;
+            width: 100%;
+        }
     }
 }

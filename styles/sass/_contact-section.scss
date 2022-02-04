@@ -1,0 +1,103 @@
+// FOURTH SECTION (CONTACT)
+.section-four {
+    background-color: $white;
+    padding: 3% 0 5% 0;
+
+    h3 {
+        margin: 0;
+        margin-bottom: 3%;
+    }
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box01 {
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+
+    input {
+        width: 98%;
+        padding: 2%;
+        margin: 1%;
+        border: 1px solid $purple;
+        border-radius: 5px;
+        font-family: $title-font;
+    }
+
+    textarea {
+        width: 98%;
+        resize: none;
+        padding: 2%;
+        margin: 1%;
+        border: 1px solid $purple;
+        border-radius: 5px;
+        font-family: $title-font;
+    }
+
+    button {
+        display: flex;
+        padding: 2% 3%;
+        margin: 0 auto;
+        margin-top: 3%;
+        border-radius: 5px;
+        border: none;
+        font-family: $title-font;
+        background-color: $purple;
+        color: $white;
+    }
+}
+
+button:hover,
+button:focus {
+    background-color: $hover-color;
+}
+
+.box02 {
+    width: 48%;
+    padding: 0 0 0 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+    padding-top: 5%;
+}
+
+.contact-icon {
+    color: $purple;
+
+    &:hover,
+    &:focus {
+        color: $hover-color;
+    }
+}
+
+// MEDIA QUERIES
+@media(max-width: 1000px) {
+    .box02 {
+        width: 52%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 800px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .box01 {
+        width: 100%;
+    }
+
+    .box02 {
+        width: 100%;
+        text-align: center;
+    }
+}

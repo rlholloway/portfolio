@@ -1,12 +1,16 @@
 // FIRST SECTION (ABOUT ME)
 .section-one {
     display: flex;
+    width: 100%;
+    padding-bottom: 2%;
+    padding-right: 1%;
 
     a {
         color: $purple;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
         color: $hover-color;
     }
 }
@@ -25,7 +29,7 @@
 .section-two {
     background-color: $white;
     padding-top: 3%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 
     h3 {
         margin: 0;
@@ -35,16 +39,62 @@
 
 .skill-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: 0 auto;
     width: 100%;
+
+    div {
+        flex-direction: column;
+        text-align: center;
+        margin: 1% 5%;
+    }
 }
 
 .skill-icon {
     width: 100px;
     height: 60px;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $purple;
+    }
+}
+
+.icon-title {
+    font-family: $title-font;
+    font-size: 1rem;
+}
+
+// MEDIA QUERIES
+@media(max-width: 1000px) {
+    .section-one p {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .section-one {
+        flex-direction: column;
+        padding: 2% 3%;
+
+        .image-box {
+            margin: 0 auto;
+        }
+
+        div {
+            text-align: center;
+        }
+    }
+
+    .section-two h3 {
+        text-align: center;
+        margin-bottom: 4%;
+    }
+}
+
+@media(max-width: 600px) {
+    .section-one h3 {
+        margin: 3% 0 0 0;
     }
 }
