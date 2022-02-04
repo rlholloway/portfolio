@@ -3,7 +3,8 @@ nav {
     width: 100%;
     margin-top: 2%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 
     ul {
         display: flex;
@@ -15,9 +16,16 @@ nav {
     }
 
     a {
+        font-size: 1.3rem;
         color: $purple;
         text-decoration: none;
     }
+}
+
+.logo {
+    font-family: $title-font;
+    font-size: 2rem;
+    color: $purple;
 }
 
 nav li a:hover,
@@ -26,28 +34,60 @@ nav li a:focus {
 }
 
 // HAMBURGER MENU
-// .hamburger {
-//     display: none;
-// }
+.hamburger {
+    display: none;
+    margin: 1%;
+}
 
 .hamburger div {
-    width: 25px;
+    width: 30px;
     height: 3px;
     background-color: $purple;
     margin: 5px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
-.toggle .line-one {
+// MEDIA QUERIES
+
+@media(max-width: 800px) {
+    nav {
+        padding-top: 2%;
+    }
+
+    .menu-hide {
+        position: fixed;
+        left: -100%;
+        top: 2rem;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(245, 245, 245, 0.9);
+        text-align: center;
+        transition: 0.5s ease-in-out;
+
+        li {
+            margin: 1rem;
+        }
+    }
+
+    .menu-hide.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .active .line-one {
     transform: rotate(-45deg) translate(-5px,6px);
-    background-color: #F6F6F6;
+    background-color: $purple;
 }
 
-.toggle .line-two {
+.active .line-two {
     opacity: 0;
 }
 
-.toggle .line-three {
+.active .line-three {
     transform: rotate(45deg) translate(-5px,-6px);
-    background-color: #F6F6F6;
+    background-color: $purple;
+}
 }

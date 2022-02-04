@@ -259,7 +259,7 @@ h1 {
 
 h2,
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -276,9 +276,12 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul {
   display: -webkit-box;
@@ -290,8 +293,15 @@ nav li {
   margin: 0 20px;
 }
 nav a {
+  font-size: 1.3rem;
   color: mediumpurple;
   text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: mediumpurple;
 }
 
 nav li a:hover,
@@ -299,31 +309,67 @@ nav li a:focus {
   color: darkslateblue;
 }
 
+.hamburger {
+  display: none;
+  margin: 1%;
+}
+
 .hamburger div {
-  width: 25px;
+  width: 30px;
   height: 3px;
   background-color: mediumpurple;
   margin: 5px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.toggle .line-one {
-  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-          transform: rotate(-45deg) translate(-5px, 6px);
-  background-color: #F6F6F6;
-}
+@media (max-width: 800px) {
+  nav {
+    padding-top: 2%;
+  }
 
-.toggle .line-two {
-  opacity: 0;
-}
+  .menu-hide {
+    position: fixed;
+    left: -100%;
+    top: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.9);
+    text-align: center;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .menu-hide li {
+    margin: 1rem;
+  }
 
-.toggle .line-three {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
-  background-color: #F6F6F6;
-}
+  .menu-hide.active {
+    left: 0;
+  }
 
+  .hamburger {
+    display: block;
+  }
+
+  .active .line-one {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+            transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: mediumpurple;
+  }
+
+  .active .line-two {
+    opacity: 0;
+  }
+
+  .active .line-three {
+    -webkit-transform: rotate(45deg) translate(-5px, -6px);
+            transform: rotate(45deg) translate(-5px, -6px);
+    background-color: mediumpurple;
+  }
+}
 .section-one {
   display: -webkit-box;
   display: -ms-flexbox;
