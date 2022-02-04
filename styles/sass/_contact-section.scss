@@ -38,7 +38,7 @@
         font-family: $title-font;
     }
 
-    button {
+    .sub-button {
         display: flex;
         padding: 2% 3%;
         margin: 0 auto;
@@ -51,8 +51,8 @@
     }
 }
 
-button:hover,
-button:focus {
+.sub-button:hover,
+.sub-button:focus {
     background-color: $hover-color;
 }
 
