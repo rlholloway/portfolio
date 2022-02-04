@@ -315,8 +315,16 @@ nav li a:focus {
 }
 
 .hamburger {
+  cursor: pointer;
   display: none;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  background-color: whitesmoke;
   margin: 1%;
+}
+.hamburger:hover {
+  background-color: white;
+  border: 1px solid mediumpurple;
 }
 
 .hamburger div {
@@ -634,7 +642,7 @@ nav li a:focus {
   border-radius: 5px;
   font-family: "Raleway", sans-serif;
 }
-.box01 button {
+.box01 .sub-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,8 +656,8 @@ nav li a:focus {
   color: whitesmoke;
 }
 
-button:hover,
-button:focus {
+.sub-button:hover,
+.sub-button:focus {
   background-color: darkslateblue;
 }
 

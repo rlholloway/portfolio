@@ -35,8 +35,19 @@ nav li a:focus {
 
 // HAMBURGER MENU
 .hamburger {
+    cursor: pointer;
     display: none;
+    border: 1px solid $white;
+    border-radius: 5px;
+    background-color: $white;
     margin: 1%;
+
+}
+
+.hamburger:hover,
+.hamburger:focus {
+    background-color: white;
+    border: 1px solid $purple;
 }
 
 .hamburger div {
