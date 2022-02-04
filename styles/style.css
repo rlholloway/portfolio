@@ -700,12 +700,17 @@ button:focus {
   }
 }
 header {
-  height: 65vh;
   background-color: whitesmoke;
 }
 header h2 {
-  width: 60%;
+  padding-bottom: 10%;
+  margin-bottom: 0;
   font-family: "Poppins", sans-serif;
+  line-height: 40px;
+}
+
+.intro {
+  width: 60%;
 }
 
 footer p {
@@ -715,13 +720,28 @@ footer p {
   font-size: 1rem;
 }
 
-@media (max-width: 1000px) {
-  header {
-    height: 50vh;
+@media (max-width: 1185px) {
+  .intro {
+    width: 100%;
   }
-  header h2 {
-    width: 90%;
+  .intro h2 {
+    width: 100%;
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 750px) {
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .intro h1 {
+    font-size: 3rem;
   }
 }
 @media (max-width: 600px) {
@@ -729,14 +749,12 @@ footer p {
     font-size: 1.3rem;
   }
 
-  header {
-    height: 40vh;
-  }
-  header h1 {
-    font-size: 2.8rem;
-  }
-  header h2 {
+  h2 {
     font-size: 1.1rem;
     width: 100%;
+  }
+
+  footer p {
+    font-size: 0.9rem;
   }
 }
