@@ -498,8 +498,8 @@ nav li a:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 2%;
-  padding: 1%;
+  margin-bottom: 5%;
+  padding: 0.5%;
   border: 3px solid mediumpurple;
 }
 
