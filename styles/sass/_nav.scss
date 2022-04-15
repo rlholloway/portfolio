@@ -17,20 +17,27 @@ nav {
 
     a {
         font-size: 1.4rem;
-        color: $purple;
+        font-weight: bold;
+        color: $hover-color;
         text-decoration: none;
     }
 }
 
 .logo {
-    font-family: $title-font;
-    font-size: 2rem;
+    font-family: $logo-font;
+    font-weight: bold;
+    font-size: 4rem;
     color: $purple;
+    margin-top: 1%;
+}
+
+.logo:hover {
+    color: $hover-color;
 }
 
 nav li a:hover,
 nav li a:focus {
-    color: $hover-color;
+    color: $purple;
 }
 
 // HAMBURGER MENU
@@ -46,7 +53,7 @@ nav li a:focus {
 
 .hamburger:hover,
 .hamburger:focus {
-    background-color: white;
+    background-color: $white;
     border: 1px solid $purple;
 }
 
@@ -67,7 +74,7 @@ nav li a:focus {
     .menu-hide {
         position: fixed;
         left: -100%;
-        top: 2rem;
+        top: 3rem;
         flex-direction: column;
         width: 100%;
         background-color: rgba(245, 245, 245, 0.9);
@@ -88,16 +95,22 @@ nav li a:focus {
     }
 
     .active .line-one {
-    transform: rotate(-45deg) translate(-5px,6px);
-    background-color: $purple;
+        transform: rotate(-45deg) translate(-5px, 6px);
+        background-color: $purple;
+    }
+
+    .active .line-two {
+        opacity: 0;
+    }
+
+    .active .line-three {
+        transform: rotate(45deg) translate(-5px, -6px);
+        background-color: $purple;
+    }
 }
 
-.active .line-two {
-    opacity: 0;
-}
-
-.active .line-three {
-    transform: rotate(45deg) translate(-5px,-6px);
-    background-color: $purple;
-}
+@media(max-width: 600px) {
+    .menu-hide {
+        top: 2.75rem;
+    }
 }

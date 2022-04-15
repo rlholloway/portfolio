@@ -239,6 +239,7 @@ html {
   margin: 0;
   padding: 0;
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -253,7 +254,7 @@ body {
 
 h1 {
   font-size: 3.4rem;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-bottom: 3%;
 }
 
@@ -299,19 +300,26 @@ nav li {
 }
 nav a {
   font-size: 1.4rem;
-  color: mediumpurple;
+  font-weight: bold;
+  color: darkslateblue;
   text-decoration: none;
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 2rem;
+  font-family: "Alex Brush", cursive;
+  font-weight: bold;
+  font-size: 4rem;
   color: mediumpurple;
+  margin-top: 1%;
+}
+
+.logo:hover {
+  color: darkslateblue;
 }
 
 nav li a:hover,
 nav li a:focus {
-  color: darkslateblue;
+  color: mediumpurple;
 }
 
 .hamburger {
@@ -325,7 +333,7 @@ nav li a:focus {
 
 .hamburger:hover,
 .hamburger:focus {
-  background-color: white;
+  background-color: whitesmoke;
   border: 1px solid mediumpurple;
 }
 
@@ -346,7 +354,7 @@ nav li a:focus {
   .menu-hide {
     position: fixed;
     left: -100%;
-    top: 2rem;
+    top: 3rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -385,13 +393,17 @@ nav li a:focus {
     background-color: mediumpurple;
   }
 }
+@media (max-width: 600px) {
+  .menu-hide {
+    top: 2.75rem;
+  }
+}
 .section-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-bottom: 2%;
-  padding-right: 1%;
+  padding: 2% 1% 2% 0;
 }
 .section-one a {
   color: mediumpurple;
@@ -731,7 +743,11 @@ nav li a:focus {
   }
 }
 header {
-  background-color: whitesmoke;
+  height: 95vh;
+  background-image: url(../assets/image02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 header h2 {
   padding-bottom: 10%;
@@ -740,6 +756,44 @@ header h2 {
   line-height: 40px;
 }
 
+.transparent {
+  background: rgba(255, 255, 255, 0.6);
+  height: 95vh;
+}
+
+.scroll {
+  color: mediumpurple;
+  font-size: 4rem;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -2%;
+  cursor: pointer;
+  -webkit-animation: scroll 1.2s ease-in-out infinite;
+          animation: scroll 1.2s ease-in-out infinite;
+}
+
+@-webkit-keyframes scroll {
+  from {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  to {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+  }
+}
+
+@keyframes scroll {
+  from {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  to {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+  }
+}
 .intro {
   width: 60%;
 }
@@ -777,7 +831,7 @@ footer p {
 }
 @media (max-width: 600px) {
   .logo {
-    font-size: 1.3rem;
+    font-size: 4rem;
   }
 
   h2 {
