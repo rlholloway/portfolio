@@ -421,6 +421,7 @@ nav li a:focus {
 .image-box img {
   width: 300px;
   border-radius: 50%;
+  border: 3px solid mediumpurple;
 }
 
 .section-two {
@@ -478,7 +479,7 @@ nav li a:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 2% 3%;
+    padding: 4% 3%;
   }
   .section-one .image-box {
     margin: 0 auto;
