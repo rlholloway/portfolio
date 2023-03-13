@@ -350,7 +350,6 @@ nav li a:focus {
   nav {
     padding-top: 2%;
   }
-
   .menu-hide {
     position: fixed;
     left: -100%;
@@ -368,25 +367,20 @@ nav li a:focus {
   .menu-hide li {
     margin: 1rem;
   }
-
   .menu-hide.active {
     left: 0;
   }
-
   .hamburger {
     display: block;
   }
-
   .active .line-one {
     -webkit-transform: rotate(-45deg) translate(-5px, 6px);
             transform: rotate(-45deg) translate(-5px, 6px);
     background-color: mediumpurple;
   }
-
   .active .line-two {
     opacity: 0;
   }
-
   .active .line-three {
     -webkit-transform: rotate(45deg) translate(-5px, -6px);
             transform: rotate(45deg) translate(-5px, -6px);
@@ -487,7 +481,6 @@ nav li a:focus {
   .section-one div {
     text-align: center;
   }
-
   .section-two h3 {
     text-align: center;
     margin-bottom: 4%;
@@ -501,7 +494,8 @@ nav li a:focus {
 .project01,
 .project02,
 .project03,
-.project04 {
+.project04,
+.project05 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,7 +588,6 @@ nav li a:focus {
   .project-text-box p {
     font-size: 1rem;
   }
-
   .link-box div a {
     font-size: 1.1rem;
   }
@@ -604,9 +597,8 @@ nav li a:focus {
     text-align: center;
     margin-bottom: 2%;
   }
-
   .project-image-box,
-.project-text-box {
+  .project-text-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -725,19 +717,15 @@ nav li a:focus {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-
   h3 {
     text-align: center;
   }
-
   .icon-box {
     margin-bottom: 4%;
   }
-
   .box01 {
     width: 100%;
   }
-
   .box02 {
     width: 100%;
     text-align: center;
@@ -834,12 +822,10 @@ footer p {
   .logo {
     font-size: 4rem;
   }
-
   h2 {
     font-size: 1.1rem;
     width: 100%;
   }
-
   footer p {
     font-size: 0.9rem;
   }
